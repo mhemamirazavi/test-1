@@ -23,13 +23,6 @@
     echo '<h2><a href="' . $RSSout->channel->item->link . '">' . $RSSout->channel->item->title . "</a></h2>";
     echo $RSSout->channel->item->pubDate;
     echo $RSSout->channel->itemdescription;
-    //
-    $RSSout2 = simplexml_load_file("http://www.cbi.ir/NewsRss.aspx?ln=fa");
-    echo '<h1>' . $RSSout2->channel->title . '|بانک مرکزی' . '</h1>';
-    echo $RSSout2->channel->item->enclosure;
-    echo '<h2><a href="' . $RSSout2->channel->item->link . '">' . $RSSout2->channel->item->title . "</a></h2>";
-    echo $RSSout2->channel->item->pubDate;
-    echo $RSSout2->channel->itemdescription;
     ?>
 </head>
 
