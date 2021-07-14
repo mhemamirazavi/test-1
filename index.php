@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="fa-IR">
 
-<head>
-    <title>firstnews.ir</title>
-    <meta http-equiv="refresh" content="20" />
-    <?php
-    error_reporting(0);
-    //rss bankmarkazi bekhater ndashtane title monaseb (rss title) dar line 20 
+<?php
 
     $RSSout_array = ["https://www.sena.ir/rss", "https://www.asriran.com/fa/rss/allnews", "https://fararu.com/fa/rss/allnews", "https://www.irna.ir/rss", "https://www.farsnews.ir/rss", "https://khabarfarsi.com/rss/top", "https://www.tabnak.ir/fa/rss/allnews", "https://www.mehrnews.com/rss", "https://www.iribnews.ir/fa/rss/allnews"];
     foreach ($RSSout_array as $RSSout_url) {
@@ -24,10 +17,3 @@
     echo $RSSout->channel->item->pubDate;
     echo $RSSout->channel->itemdescription;
     ?>
-</head>
-
-<body>
-
-</body>
-
-</html>
